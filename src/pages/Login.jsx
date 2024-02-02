@@ -21,6 +21,11 @@ function Login() {
         Log in to your account
       </Heading>
       <LoginForm />
+      <Heading as='h5'>
+        <p>
+          &copy; Copyright {new Date().getFullYear()} by OStudio
+        </p>
+      </Heading>
     </LoginLayout>
   );
 }
