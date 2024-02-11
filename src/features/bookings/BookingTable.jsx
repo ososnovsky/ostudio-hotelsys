@@ -5,9 +5,12 @@ import Empty from "../../ui/Empty";
 import Spinner from "../../ui/Spinner";
 import { useBookings } from "./useBookings";
 import Pagination from "../../ui/Pagination";
+import { useGuests } from "../guests/useGuests";
 
 function BookingTable() {
   const { bookings, isLoading, count } = useBookings();
+  const { guests, isLoading: isLoadingGuests } = useGuests();
+  console.log(guests)
 
   if (isLoading) return <Spinner />;
 

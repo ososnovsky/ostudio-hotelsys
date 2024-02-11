@@ -110,9 +110,6 @@ function CabinRow({ cabin }) {
 
           </Menus.Menu>
         </Modal>
-
-
-
       </div>
     </Table.Row >
 

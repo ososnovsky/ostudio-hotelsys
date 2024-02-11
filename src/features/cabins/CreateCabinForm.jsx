@@ -41,8 +41,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
           reset(getValues());
           onCloseModal?.()
         },
-      }
-    );
+      });
     // mutate({ ...data, image: data.image[0] })
     else createCabin({ ...data, image: image }, {
       onSuccess: (data) => {

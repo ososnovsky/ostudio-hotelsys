@@ -21,6 +21,7 @@ function Cabins() {
     <>
       <Row type="horizontal">
         <Heading as="h1">All cabins</Heading>
+        <AddCabin />
         <CabinTableOperations />
         {/* <img src="https://tmmklvknxxulcnivesbr.supabase.co/storage/v1/object/public/cabin-images/cabin-001.jpg" /> */}
       </Row>
@@ -30,7 +31,7 @@ function Cabins() {
 
         {/* <Button onClick={() => setShowForm(show => !show)}>Add new cabin</Button>
         {showForm && <CreateCabinForm />} */}
-        <AddCabin />
+
       </Row>
     </>
   );
