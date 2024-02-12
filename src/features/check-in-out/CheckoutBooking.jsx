@@ -9,7 +9,7 @@ import Spinner from "../../ui/Spinner";
 import BookingDataBox from "../bookings/BookingDataBox"
 import { useBooking } from "../bookings/useBooking";
 import { useCheckout } from "./useCheckout";
-import InvoicePDF from '../../ui/invoicePDF';
+import InvoicePDF from '../../ui/InvoicePDF';
 import { formatCurrency } from '../../utils/helpers';
 
 function CheckoutBooking() {
