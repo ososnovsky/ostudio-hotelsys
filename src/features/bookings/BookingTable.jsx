@@ -12,7 +12,7 @@ function BookingTable() {
   const { guests, isLoading: isLoadingGuests } = useGuests();
   console.log(guests)
 
-  if (isLoading) return <Spinner />;
+  if (isLoading || isLoadingGuests) return <Spinner />;
 
   if (!bookings.length) return <Empty resourceName='bookings' />
 

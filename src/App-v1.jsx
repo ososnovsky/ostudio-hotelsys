@@ -11,6 +11,7 @@
 // npm i react-hook-form@7
 // npm i recharts@2
 // npm i react-error-boundary
+// npm i @react-pdf/renderer
 
 import styled from "styled-components"
 import GlobalStyles from "./styles/GlobalStyles"

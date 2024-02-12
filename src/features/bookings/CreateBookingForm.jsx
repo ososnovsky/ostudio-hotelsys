@@ -90,7 +90,7 @@ function CreateBookingForm({ onCloseModal }) {
     //totalPrice
     const totalPrice = cabinPrice + extrasPrice;
 
-    const finalData = {
+    const bookingData = {
       ...data,
       cabinPrice,
       extrasPrice,
@@ -105,7 +105,7 @@ function CreateBookingForm({ onCloseModal }) {
       startDate: new Date(data.startDate).toISOString(),
       endDate: new Date(data.endDate).toISOString(),
     };
-    createBooking(finalData, {
+    createBooking(bookingData, {
       onSuccess: (data) => {
         reset();
         onCloseModal?.()
